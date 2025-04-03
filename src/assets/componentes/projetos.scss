@@ -1,0 +1,86 @@
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Espaçamento entre os projetos */
+    margin-top: 100px;
+    padding: 20px;
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 900px; /* Define um limite de largura */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projeto-title{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 60px;
+    display: inline-block;
+    background: linear-gradient(90deg, 
+        rgba(34, 34, 34, 0.4), /* Cinza bem suave nas pontas */
+        #00ee88,  /* Verde neon mais escuro */
+        #00ffcc,  /* Verde neon brilhante no centro */
+        #00ee88,  /* Verde neon mais escuro */
+        rgba(34, 34, 34, 0.4)  /* Cinza bem suave nas pontas */
+    );
+    background-size: 200% 100%;
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: dance 2s infinite ease-in-out alternate;
+}
+
+@keyframes border-flow {
+    0% {
+        border-image-source: linear-gradient(90deg, transparent, black, transparent);
+    }
+    50% {
+        border-image-source: linear-gradient(90deg, black, transparent, black);
+    }
+    100% {
+        border-image-source: linear-gradient(90deg, transparent, black, transparent);
+    }
+}
+
+.projeto-container {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px; /* Espaçamento entre imagem e descrição */
+    width: 100%;
+    max-width: 800px;
+    opacity: 0;
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.projeto-container.show {
+    opacity: 1;
+    transform: translateX(0) !important;
+}
+
+.projeto-image {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    background: url("URL_DA_IMAGEM_AQUI") no-repeat center/cover;
+    border: 3px solid #00ee88;
+}
+
+.projeto-descricao {
+    max-width: 400px;
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.projeto-container:nth-child(odd) {
+    flex-direction: row;
+    transform: translateX(-50px); /* Vem da esquerda */
+}
+
+.projeto-container:nth-child(even) {
+    flex-direction: row-reverse;
+    transform: translateX(50px); /* Vem da direita */
+}

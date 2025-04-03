@@ -1,0 +1,63 @@
+
+.home-title {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 250px;
+    display: inline-block;
+    background: linear-gradient(90deg, 
+        rgba(34, 34, 34, 0.4), /* Cinza bem suave nas pontas */
+        #00ee88,  /* Verde neon mais escuro */
+        #00ffcc,  /* Verde neon brilhante no centro */
+        #00ee88,  /* Verde neon mais escuro */
+        rgba(34, 34, 34, 0.4)  /* Cinza bem suave nas pontas */
+    );
+    background-size: 200% 100%;
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: dance 2s infinite ease-in-out alternate;
+}
+
+/* Animação de leve para cima e para baixo */
+@keyframes dance {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+
+
+
+
+
+// @keyframes fadeIn {
+//     from {
+//         opacity: 0;
+//         transform: translateY(10px); /* Opcional: sobe levemente */
+//     }
+//     to {
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }
+
+.home-content {
+    max-width: 650px;  /* Define um tamanho máximo */
+    width: 90%;  /* Ajusta para telas menores */
+    margin: 0 auto;  /* Centraliza */
+    text-align: center;  /* Mantém o texto centralizado */
+}
+
+p{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.skills-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  
