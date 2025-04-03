@@ -15,41 +15,43 @@ function Projetos() {
             { threshold: 0.2 } // Ativa quando 20% do card estiver visível
         );
 
-        const projetos = document.querySelectorAll(".projeto-container");
+        const projetos = document.querySelectorAll(".projeto-grid"); // Alterado para projeto-grid
         projetos.forEach((projeto) => observer.observe(projeto));
 
         return () => observer.disconnect();
     }, []);
 
     return (
-        <div className="projetos-container">
-            <h1 className="projeto-title">Projetos</h1>
-            <p>Projetos desenvolvidos por mim.</p>
+        <section id="projetos">
+            <div className="projetos-container">
+                <h1 className="projeto-title">Projetos</h1>
+                <p>Projetos desenvolvidos por mim.</p>
 
-            <div className="projeto-container">
-                <div className="projeto-image"></div>
-                <div className="projeto-descricao">
-                    <h2>Projeto 1</h2>
-                    <p>Descrição do projeto 1.</p>
+                <div className="projeto-grid"> {/* Alterado para projeto-grid */}
+                    <div className="projeto-image"></div>
+                    <div className="projeto-descricao">
+                        <h2>Projeto 1</h2>
+                        <p>Descrição do projeto 1.</p>
+                    </div>
+                </div>
+
+                <div className="projeto-grid"> {/* Alterado para projeto-grid */}
+                    <div className="projeto-image"></div>
+                    <div className="projeto-descricao">
+                        <h2>Projeto 2</h2>
+                        <p>Descrição do projeto 2.</p>
+                    </div>
+                </div>
+
+                <div className="projeto-grid"> {/* Alterado para projeto-grid */}
+                    <div className="projeto-image"></div>
+                    <div className="projeto-descricao">
+                        <h2>Projeto 3</h2>
+                        <p>Descrição do projeto 3.</p>
+                    </div>
                 </div>
             </div>
-
-            <div className="projeto-container">
-                <div className="projeto-image"></div>
-                <div className="projeto-descricao">
-                    <h2>Projeto 2</h2>
-                    <p>Descrição do projeto 2.</p>
-                </div>
-            </div>
-
-            <div className="projeto-container">
-                <div className="projeto-image"></div>
-                <div className="projeto-descricao">
-                    <h2>Projeto 3</h2>
-                    <p>Descrição do projeto 3.</p>
-                </div>
-            </div>
-        </div>
+        </section>
     );
 }
 

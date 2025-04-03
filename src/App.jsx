@@ -7,6 +7,8 @@ import Carrosel from './assets/componentes/carrosel.jsx';
 import './assets/componentes/carrosel.scss';
 import Projetos from './assets/componentes/projetos.jsx';
 import './assets/componentes/projetos.scss';
+import Sobre from './assets/componentes/sobreMim.jsx';
+import './assets/componentes/sobreMim.scss';
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       <Home/>
       <Carrosel />
       <Projetos />
+      <Sobre />
 
     </main>
    

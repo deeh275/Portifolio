@@ -2,7 +2,7 @@ import TextoDigitando from "./JShome.jsx";
 
 function Home() {
     return (
-        <div className="home-container">
+        <section id="home" className="home-container">
             <div className="home-content">
                 <h1 className="home-title">Transformo ideias em códigos e código em soluções eficientes.</h1>
                 <TextoDigitando 
@@ -10,7 +10,7 @@ function Home() {
                     velocidade={75}
                 />
             </div>
-        </div>
+        </section>
     );
 }
 

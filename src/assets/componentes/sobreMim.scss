@@ -1,0 +1,50 @@
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: #f0f0f0; /* Texto claro para contraste */
+    min-height: 100vh;
+    margin-top: -180px; /* Distância do topo */
+  }
+  
+  .sobre {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza o texto */
+    padding: 0 15px;
+    color: #e0e0e0; /* Cor de texto clara */
+    text-align: justify; /* Justifica o texto para facilitar a leitura */
+  }
+  
+  .sobre p {
+    margin-bottom: 20px; /* Espaçamento entre os parágrafos */
+    letter-spacing: 0.5px;
+  }
+  
+  .sobre a {
+    color: #00ffcc; /* Cor vibrante para links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .sobre a:hover {
+    color: #00ee88; /* Efeito de hover no link */
+    text-decoration: underline; /* Sublinha o link quando hover */
+  }
+  
+  @media (max-width: 768px) {
+    .home-title {
+      font-size: 2.5rem; /* Ajusta o tamanho do título para telas menores */
+    }
+  
+    .sobre {
+      font-size: 1.1rem; /* Reduz o tamanho da fonte para telas menores */
+      padding: 0 10px;
+    }
+  }
+  
