@@ -1,5 +1,7 @@
+import { useEffect } from "react";
+
 function Servicos() {
-    return (
+  return (
         <section id="servicos">
             <div className="container">
                 <h1 className="servico">O que faço?</h1>
