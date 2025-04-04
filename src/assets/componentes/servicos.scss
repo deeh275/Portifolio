@@ -1,0 +1,110 @@
+#servicos {
+    scroll-margin-top: 90px;
+}
+
+.servico {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 250px;
+    background: linear-gradient(90deg, 
+        rgba(34, 34, 34, 0.4),
+        #00ee88,
+        #00ffcc,
+        #00ee88,
+        rgba(34, 34, 34, 0.4)
+    );
+    background-size: 200% 100%;
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: dance 2s infinite ease-in-out alternate;
+}
+
+.servico-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    place-items: center;
+}
+
+.servico-title {
+    background: linear-gradient(90deg, 
+        rgba(34, 34, 34, 0.4),
+        #00ee88,
+        #00ffcc,
+        #00ee88,
+        rgba(34, 34, 34, 0.4)
+    );
+    background-size: 200% 100%;
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: dance 2s infinite ease-in-out alternate;
+}
+
+.servico-item {
+    position: relative;
+    background-color: #121212;
+    width: 400px;
+    height: 320px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.servico-item::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: conic-gradient(from 0deg, 
+        rgba(34, 34, 34, 0.4),
+        #00ee88,
+        #00ffcc,
+        #00ee88,
+        rgba(34, 34, 34, 0.4),
+        #00ee88,
+        #00ffcc,
+        #00ee88
+    );
+    border-radius: 12px;
+    z-index: -1;
+    animation: spin-border 4s linear infinite;
+}
+
+
+.servico-item::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: #121212;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.servico-item * {
+    position: relative;
+    z-index: 2;
+}
+
+.servico-item p {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes spin-border {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
