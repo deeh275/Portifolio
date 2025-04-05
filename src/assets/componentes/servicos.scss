@@ -111,14 +111,15 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 430px) {
     .servico {
+        margin-left: 55px;
       font-size: 40px;
       margin-top: 150px;
     }
   
     .servico-container {
-        margin-left: 40px;
+        margin-left: 55px;
        width: 80%;
       grid-template-columns: 1fr;
       height: auto;
