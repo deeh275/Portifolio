@@ -47,7 +47,7 @@
     position: relative;
     background-color: #121212;
     width: 400px;
-    height: 320px;
+    height: 360px;
     padding: 20px;
     text-align: center;
     border-radius: 12px;
@@ -110,3 +110,40 @@
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 360px) {
+    .servico {
+      font-size: 40px;
+      margin-top: 150px;
+    }
+  
+    .servico-container {
+        margin-left: 40px;
+       width: 80%;
+      grid-template-columns: 1fr;
+      height: auto;
+      gap: 60px;
+    }
+  
+    .servico-item {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+  
+      /* 👇 Centralização total */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .servico-title{
+        font-size: 20px;
+    }
+    .servico-item p {
+      font-size: 15px !important;
+      text-align: center;
+    }
+  }
+  

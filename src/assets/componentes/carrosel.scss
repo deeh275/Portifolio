@@ -36,7 +36,7 @@
   transform: scale(1.1);
 }
 
-/* 🔥 Animação ajustada para parecer infinita */
+
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -45,3 +45,32 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 360px) {
+
+  .skill-slide img {
+    max-width: 60%;
+    max-height: 60%;
+  }
+
+  
+  skill-slide {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .skill-slide i {
+    // max-width: 10%;
+    // max-height: 10%;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+
+
+

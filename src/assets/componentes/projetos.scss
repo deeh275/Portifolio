@@ -83,3 +83,38 @@
     flex-direction: row-reverse;
     transform: translateX(50px); /* Vem da direita */
 }
+
+@media (max-width: 360px) {
+    .projeto-title {
+        font-size: 40px !important;
+        margin-top: 150px;
+    }
+ 
+}
+
+@media (max-width: 360px) {
+    .projeto-title {
+      font-size: 40px !important;
+      margin-top: 10px;
+    }
+  
+    .projeto-grid {
+      flex-direction: column !important;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    .projeto-image {
+      width: 90%;
+      height: 150px;
+      border-radius: 8px;
+    }
+  
+    .projeto-descricao {
+      font-size: 14px;
+      text-align: center;
+      padding: 0 10px;
+      max-width: 100%;
+    }
+  }
+  

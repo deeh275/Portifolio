@@ -52,4 +52,16 @@
       padding: 0 10px;
     }
   }
+
+  @media (max-width: 360px) {
+
+    .sobre-mim{
+      margin-left: 20px;
+    }
+ 
+    p {
+      font-size: 15px !important; /* Reduz o tamanho da fonte para telas menores */
+      padding: 0 5px;
+    }
+  }
   
