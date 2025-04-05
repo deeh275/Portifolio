@@ -113,9 +113,12 @@
 
 @media (max-width: 430px) {
     .servico {
-        margin-left: 55px;
-      font-size: 40px;
-      margin-top: 150px;
+        font-size: 40px;
+        text-align: center;
+        margin: 150px auto 33px auto; /* Centraliza e remove margens laterais */
+        max-width: 90%; /* Evita que o texto passe do limite da tela */
+        white-space: normal; /* Permite quebra de linha se necessário */
+        overflow-wrap: break-word; /* Garante que palavras longas quebrem corretamente */
     }
   
     .servico-container {

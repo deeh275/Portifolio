@@ -42,16 +42,6 @@
     text-decoration: underline; /* Sublinha o link quando hover */
   }
   
-  @media (max-width: 768px) {
-    .home-title {
-      font-size: 2.5rem; /* Ajusta o tamanho do título para telas menores */
-    }
-  
-    .sobre {
-      font-size: 1.1rem; /* Reduz o tamanho da fonte para telas menores */
-      padding: 0 10px;
-    }
-  }
 
   @media (max-width: 430px) {
 
