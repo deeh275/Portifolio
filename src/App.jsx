@@ -11,6 +11,7 @@ import Sobre from './assets/componentes/sobreMim.jsx';
 import './assets/componentes/sobreMim.scss';
 import Servicos from './assets/componentes/servicos.jsx';
 import './assets/componentes/servicos.scss';
+// import Soft from './assets/componentes/softSkill.jsx';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Projetos />
       <Sobre />
       <Servicos />
+      {/* <Soft /> */}
 
     </main>
    

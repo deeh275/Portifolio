@@ -7,7 +7,7 @@ function Header () {
                 <li className="header-nav-item"><a href="#projetos">Projetos</a></li>
                 <li className="header-nav-item"><a href="#sobre">Sobre</a></li>
                 <li className="header-nav-item"><a href="#servicos">Serviços</a></li>
-                <li className="header-nav-item"><a href="#contact">Soft Skill</a></li>
+                <li className="header-nav-item"><a href="#softSkill">Soft Skill</a></li>
             </ul>
         </nav>
         </header>
