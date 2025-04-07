@@ -3,11 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px; /* Espaçamento entre os projetos */
+    gap: 80px; /* Espaçamento entre os projetos */
     margin-top: 100px;
     padding: 20px;
     width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 900px; /* Define um limite de largura */
+    max-width: 2000px; /* Define um limite de largura */
     margin-left: auto;
     margin-right: auto;
 }
@@ -18,7 +18,26 @@
     margin-top: 60px;
     display: inline-block;
     background: linear-gradient(90deg, 
-        rgba(34, 34, 34, 0.4), /* Cinza bem suave nas pontas */
+    rgba(131, 131, 131, 0.4), /* Cinza bem suave nas pontas */
+    #00ee88,  /* Verde neon mais escuro */
+    #00ffcc,  /* Verde neon brilhante no centro */
+    #00ee88,  /* Verde neon mais escuro */
+    rgba(34, 34, 34, 0.4)  /* Cinza bem suave nas pontas */
+    );
+    background-size: 200% 100%;
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: dance 2s infinite ease-in-out alternate;
+}
+
+.Title-descricao{
+    margin-bottom: -40px;
+    width: 80%;
+    margin-left: 70px;
+    display: inline-block;
+    background: linear-gradient(90deg, 
+        rgba(131, 131, 131, 0.4), /* Cinza bem suave nas pontas */
         #00ee88,  /* Verde neon mais escuro */
         #00ffcc,  /* Verde neon brilhante no centro */
         #00ee88,  /* Verde neon mais escuro */
@@ -43,13 +62,14 @@
     }
 }
 
-.projeto-grid { /* Alterado para projeto-grid */
+.projeto-grid { 
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 150px; 
+    gap: 350px; 
     width: 100%;
-    max-width: 800px;
+    max-width: 1500px;
     opacity: 0;
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
@@ -60,18 +80,34 @@
 }
 
 .projeto-image {
-    width: 250px;
-    height: 150px;
+    width: 450px;
+    height: 580px;
     border-radius: 10px;
     background: url("URL_DA_IMAGEM_AQUI") no-repeat center/cover;
     border: 3px solid #00ee88;
 }
 
 .projeto-descricao {
-    max-width: 400px;
+    max-width: 450px;
     color: white;
-    font-size: 16px;
+    font-size: 1.2rem;
     text-align: justify;
+    margin-left: 30px;
+  }
+  
+
+.icon-projeto{
+    margin-left: 60px;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+  
+}
+
+.projeto-descricao p {
+    font-size: 18px;
+    width: 80%;
+  margin-left: 60px;
 }
 
 .projeto-grid:nth-child(odd) { /* Alterado para projeto-grid */

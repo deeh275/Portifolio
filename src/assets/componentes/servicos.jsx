@@ -1,6 +1,26 @@
 import { useEffect } from "react";
 
 function Servicos() {
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting){
+                        entry.target.classList.add("show"); 
+                    } else {
+                        entry.target.classList.remove("show"); 
+                    }
+
+                });
+            },
+            { threshold: 0.2 } // Ativa quando 20% do card estiver visível
+        );
+        const container = document.querySelector(".servico-container");
+        const servicos = container?.querySelectorAll(".servico-item"); 
+
+        servicos.forEach((servico) => observer.observe(servico)); // Alterado para servico-item
+        return () => observer.disconnect();
+    }, []);
   return (
         <section id="servicos">
             <div className="container">

@@ -21,12 +21,15 @@
 }
 
 .servico-container {
-    justify-content: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 100vh;
     place-items: center;
+    gap: 20px; 
+    max-width: 1400px; 
+    margin: 0 auto; 
 }
+
 
 .servico-title {
     background: linear-gradient(90deg, 
@@ -101,6 +104,19 @@
     color: white;
     font-size: 18px;
 }
+
+
+.servico-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .servico-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 
 @keyframes spin-border {
     0% {

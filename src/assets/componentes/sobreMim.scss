@@ -7,7 +7,7 @@
     padding: 40px 20px;
     color: #f0f0f0; /* Texto claro para contraste */
     min-height: 100vh;
-    // margin-top: -180px; /* Distância do topo;; */
+  
   
   }
 
@@ -18,28 +18,11 @@
   .sobre {
     font-size: 1.2rem;
     line-height: 1.8;
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto; /* Centraliza o texto */
-    padding: 0 15px;
+    // padding: 0 15px;
     color: #e0e0e0; /* Cor de texto clara */
-    text-align: justify; /* Justifica o texto para facilitar a leitura */
-  }
-  
-  .sobre p {
-    margin-bottom: 20px; /* Espaçamento entre os parágrafos */
-    letter-spacing: 0.5px;
-  }
-  
-  .sobre a {
-    color: #00ffcc; /* Cor vibrante para links */
-    text-decoration: none; /* Remove o sublinhado padrão */
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .sobre a:hover {
-    color: #00ee88; /* Efeito de hover no link */
-    text-decoration: underline; /* Sublinha o link quando hover */
+
   }
   
 
