@@ -12,6 +12,7 @@ import './assets/componentes/sobreMim.scss';
 import Servicos from './assets/componentes/servicos.jsx';
 import './assets/componentes/servicos.scss';
 // import Soft from './assets/componentes/softSkill.jsx';
+// import './assets/componentes/softSkill.scss';
 
 
 
