@@ -7,7 +7,7 @@ function Home() {
                 <h1 className="home-title">Transformo ideias em códigos e código em soluções eficientes.</h1>
                 <TextoDigitando 
                     texto="Olá, meu nome é David, sou desenvolvedor Full Stack apaixonado por tecnologia e inovação. Minha missão é criar aplicações escaláveis, intuitivas e eficientes, sempre buscando a melhor experiência para o usuário."
-                    velocidade={75}
+                    velocidade={30}
                 />
             </div>
         </section>

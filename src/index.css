@@ -1,5 +1,6 @@
 
 html {
+ 
   scroll-behavior: smooth;
   font-size: 16px; /* base para rem */
   box-sizing: border-box;
@@ -11,8 +12,9 @@ html {
 
 body {
   background: linear-gradient(to bottom, #0d0d0d, #000);
+  overflow-x: hidden;
   height: 100%;
-  min-height: 100vh; /* usa vh para garantir altura mínima real */
+  min-height: 100vh; 
   overflow-y: auto;
   margin: 0;
   position: relative;
