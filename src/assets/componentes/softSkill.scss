@@ -2,19 +2,19 @@
     scroll-margin-top: 100px;
   }
 
-.div-grid{
+  .div-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    height: 100vh;
-    gap: 20px; 
-    max-width: 1400px; 
-    margin: 0 auto; 
-}
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px; 
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem; 
+    place-items: stretch;
+  }
+  
+  
 
-.soft-item{
-width: 400px;
-}
+
 
 .soft-title{
     font-size: 50px;
@@ -36,7 +36,6 @@ width: 400px;
 
 .soft-subTitle{
         text-align: center;
-        // margin-top: 100px;
     background: linear-gradient(90deg, 
     rgba(160, 160, 160, 0.4),
     #00ee88,
@@ -50,6 +49,19 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 animation: dance 2s infinite ease-in-out alternate;
 }
+.soft-scroll {
+    max-height: 230px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+ 
+  }
+  
+  .soft-scroll::-webkit-scrollbar {
+    width: 0px;
+  }
 
 .soft-item {
     position: relative;
@@ -63,7 +75,16 @@ animation: dance 2s infinite ease-in-out alternate;
     overflow: hidden;
     border: 4px solid rgba(0, 255, 204, 0.4); 
     box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
+    cursor: pointer;
 }
+
+.div-grid .soft-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 204, 0.8), 0 0 10px rgba(0, 255, 204, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
 
 .soft-item::before {
     content: '';
@@ -111,23 +132,15 @@ animation: dance 2s infinite ease-in-out alternate;
 }
 
 
-// .soft-item {
-//     opacity: 0;
-//     transform: translateY(50px);
-//     transition: all 0.6s ease-out;
-//   }
+.soft-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
   
-//   .soft-item.show {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
+  .soft-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
   
 
-@keyframes spin-border {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
