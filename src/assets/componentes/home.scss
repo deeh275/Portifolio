@@ -17,6 +17,16 @@
     animation: dance 2s infinite ease-in-out alternate;
 }
 
+.text-container {
+    min-height: 160px; /* Ajuste conforme o tamanho final esperado do texto */
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: justify;
+  }
+  
+
 /* Animação de leve para cima e para baixo */
 @keyframes dance {
   0% { transform: translateY(0); }
@@ -62,6 +72,7 @@ p{
         justify-content: center ;
         margin-left: 10px;
         text-align: center;
+     
     }
     
     
