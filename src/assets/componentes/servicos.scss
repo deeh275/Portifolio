@@ -178,6 +178,10 @@
     .social-icon:hover {
         transform: none !important;
       }
+
+      .servico-container .servico-item{
+        pointer-events: none;
+      }
       
 
   }

@@ -55,5 +55,9 @@
   .item{
     top: 450px;
   }
-  
+
+  .carrossel .item{
+    pointer-events: none;
+  }
+
 }
