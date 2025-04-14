@@ -13,6 +13,8 @@ import Servicos from './assets/componentes/servicos.jsx';
 import './assets/componentes/servicos.scss';
 import Soft from './assets/componentes/softSkill.jsx';
 import './assets/componentes/softSkill.scss';
+import Footer from './assets/componentes/footer.jsx';
+import './assets/componentes/footer.scss';
 
 
 
@@ -30,8 +32,8 @@ function App() {
       <Sobre />
       <Servicos />
       <Soft />
-
     </main>
+    <Footer />
    
      
     </>

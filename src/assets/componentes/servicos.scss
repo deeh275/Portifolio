@@ -147,7 +147,7 @@
     }
   
     .servico-container {
-        margin-left: 55px;
+        margin-left: 40px;
        width: 80%;
       grid-template-columns: 1fr;
       height: auto;
@@ -158,13 +158,13 @@
       width: 100%;
       height: auto;
       padding: 15px;
-  
-      /* 👇 Centralização total */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
+
+
 
 
     .servico-title{
@@ -174,5 +174,11 @@
       font-size: 15px !important;
       text-align: center;
     }
+
+    .social-icon:hover {
+        transform: none !important;
+      }
+      
+
   }
   

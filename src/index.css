@@ -14,7 +14,7 @@ body {
   background: linear-gradient(to bottom, #0d0d0d, #000);
   overflow-x: hidden;
   height: 100%;
-  min-height: 100vh; 
+  min-height: 120vh; 
   overflow-y: auto;
   margin: 0;
   position: relative;

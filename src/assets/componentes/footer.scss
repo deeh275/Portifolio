@@ -1,0 +1,33 @@
+/* Estilos gerais do footer */
+.footer {
+    background-color: #121212;
+    text-align: center;
+    padding: 5px 10px; 
+    border-top: 2px solid;
+    border-image: linear-gradient(90deg, transparent, #00ff99, transparent);
+    border-image-slice: 1;     
+    justify-content: space-between;  
+  }
+  /* Texto do rodapé */
+  .footer p {
+    font-size: 12px; /* Fonte menor */
+    margin: 4px 0;
+    text-align: center;
+  }
+  
+  .social-icons {
+    margin: 15px 0; /* Menor espaçamento vertical */
+  }
+  
+  .social-icon {
+    font-size: 35px; 
+    color: #00ffcc;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons .social-icon:hover {
+    color: #00ee88;
+    transform: scale(1.3);
+  }
+  
