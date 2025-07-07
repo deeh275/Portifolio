@@ -96,7 +96,7 @@ function Projetos() {
                 </div>
 
                 <div className="projeto-grid"> {/* Alterado para projeto-grid */}
-                    <div className="projeto-image"></div>
+                    <div className="projeto-image" style={{ backgroundImage: `url("vagaja.png")` }}></div>
                     <div className="projeto-descricao">
                         <h2>Projeto 3</h2>
                         <p>Descrição do projeto 3.</p>
