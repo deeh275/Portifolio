@@ -98,9 +98,33 @@ function Projetos() {
                 <div className="projeto-grid"> {/* Alterado para projeto-grid */}
                     <div className="projeto-image" style={{ backgroundImage: `url("vagaja.png")` }}></div>
                     <div className="projeto-descricao">
-                        <h2>Projeto 3</h2>
-                        <p>Descrição do projeto 3.</p>
+                        <h2 className="Title-descricao">Vagajá Plataforma Mobile para Reservas de Estacionamento em Eventos</h2>
+                        <p>VagaJá é um aplicativo mobile desenvolvido para facilitar o aluguel antecipado de vagas de estacionamento para eventos, shows, feiras e encontros em geral.
+
+                            Com uma interface moderna, intuitiva e responsiva, o app permite que usuários busquem, reservem e garantam suas vagas com antecedência, evitando imprevistos e filas no dia do evento.
+
+                            Além disso, o VagaJá possibilita que donos de estacionamentos ou imóveis disponibilizem suas vagas para locação temporária, criando novas oportunidades de renda.
+
+                            O objetivo do aplicativo é proporcionar mais praticidade, segurança e conforto na hora de estacionar, tornando a experiência de mobilidade em eventos mais organizada e tranquila.</p>
+
+                             <dvi>
+                            <i
+                                className="devicon-react-original colored icon-projeto" title="React"
+                            ></i>
+                            <i
+                                className="devicon-css3-plain colored icon-projeto" title="CSS3"
+                            ></i>
+                            <i
+                                className="devicon-vite-original colored icon-projeto" title="vite"
+                            ></i>
+
+                            <i className="devicon-nodejs-plain colored icon-projeto" title="Node.js"></i>
+
+
+
+                        </dvi>
                     </div>
+                    
                 </div>
             </div>
         </section>
