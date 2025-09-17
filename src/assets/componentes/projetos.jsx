@@ -6,13 +6,13 @@ function Projetos() {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add("show"); // Aparece ao entrar
+                        entry.target.classList.add("show"); 
                     } else {
-                        entry.target.classList.remove("show"); // Some ao sair
+                        entry.target.classList.remove("show"); 
                     }
                 });
             },
-            { threshold: 0.2 } // Ativa quando 20% do card estiver visível
+            { threshold: 0.2 } 
         );
 
         const container = document.querySelector(".projetos-container");
@@ -62,12 +62,12 @@ function Projetos() {
 
                 </div>
 
-                <div className="projeto-grid"> {/* Alterado para projeto-grid */}
+                <div className="projeto-grid"> 
                     <div className="projeto-image" style={{ backgroundImage: `url("skillhub.png")` }}></div>
                     <div className="projeto-descricao">
                         <h2 className="Title-descricao">Aplicativo de Serviços – Dryclenerc (em desenvolvimento)</h2>
 
-                        <p>Aplicativo desenvolvido para a empresa DryClenerc utilizando React.js, CSS e Vite, com backend próprio para gerenciar autenticação, dados e notificações. O projeto está em andamento e foca em uma interface responsiva e otimizada para dispositivos móveis.
+                        <p>Aplicativo desenvolvido utilizando React.js, CSS e Vite, com backend próprio para gerenciar autenticação, dados e notificações. O projeto está em andamento e foca em uma interface responsiva e otimizada para dispositivos móveis.
 
                             A plataforma possibilita buscas rápidas e filtradas para que clientes encontrem prestadores adequados, enquanto profissionais têm acesso a oportunidades reais de trabalho. Conta com cadastro de usuários, avaliações, feedbacks e sistema de notificações para acompanhamento dos pedidos.
 
